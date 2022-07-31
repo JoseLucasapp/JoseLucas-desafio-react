@@ -1,0 +1,266 @@
+.home-main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Manrope', sans-serif;
+    background-color: white;
+}
+
+.home-form {
+    width: 50%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.home-main p {
+    font-size: 20px;
+}
+
+.home-form input {
+    width: 50%;
+    height: 6vh;
+    border-radius: 5px;
+    border: 1px solid #171515;
+    font-size: 20px;
+}
+
+.home-form input:focus {
+    outline: none;
+}
+
+.home-form button {
+    width: 20%;
+    margin-left: 0.5%;
+    height: 6.5vh;
+    background-color: #171515;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vh;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 0px solid #171515;
+}
+
+.home-form-data {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.home-form-title {
+    width: 50%;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 10%;
+    color: #171515;
+}
+
+.home-form button {
+    outline: none;
+}
+
+.home-form button img {
+    width: 20%;
+}
+
+.home-form-theme {
+    margin-top: 1%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.home-form-theme img {
+    cursor: pointer;
+}
+
+@media (max-width: 399px) and (min-width: 200px) {
+    .home-form {
+        width: 90%;
+        height: 80vh;
+    }
+
+    .home-form-data {
+        height: 20vh;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .home-form-data input {
+        width: 100%;
+        height: 8vh;
+        font-size: 25px;
+    }
+
+    .home-form-data button {
+        width: 50%;
+        height: 7vh;
+        margin-top: 1vh;
+    }
+
+    .home-form-title {
+        width: 100%;
+        margin-left: 0%;
+        height: 15vh;
+        text-align: center;
+    }
+
+    .home-form-title p {
+        font-size: 27px;
+    }
+
+    .home-form-theme {
+        height: 10vh;
+    }
+
+    .home-form-theme img {
+        width: 15%;
+    }
+}
+
+@media (max-width: 599px) and (min-width: 400px) {
+    .home-form {
+        width: 90%;
+        height: 80vh;
+    }
+
+    .home-form-data {
+        height: 20vh;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .home-form-data input {
+        width: 100%;
+        height: 8vh;
+        font-size: 25px;
+    }
+
+    .home-form-data button {
+        width: 50%;
+        height: 7vh;
+        margin-top: 1vh;
+    }
+
+    .home-form-title {
+        width: 100%;
+        margin-left: 0%;
+        height: 15vh;
+        text-align: center;
+    }
+
+    .home-form-title p {
+        font-size: 27px;
+    }
+
+    .home-form-theme {
+        height: 10vh;
+    }
+
+    .home-form-theme img {
+        width: 15%;
+    }
+}
+
+@media (max-width: 799px) and (min-width: 600px) {
+    .home-form {
+        width: 90%;
+        height: 80vh;
+    }
+
+    .home-form-data {
+        height: 20vh;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .home-form-data input {
+        width: 100%;
+        height: 8vh;
+        font-size: 35px;
+    }
+
+    .home-form-data button {
+        width: 50%;
+        height: 7vh;
+        margin-top: 1vh;
+    }
+
+    .home-form-title {
+        width: 100%;
+        margin-left: 0%;
+        height: 15vh;
+        text-align: center;
+    }
+
+    .home-form-title p {
+        font-size: 40px;
+    }
+
+    .home-form-theme {
+        height: 10vh;
+    }
+
+    .home-form-theme img {
+        width: 15%;
+    }
+}
+
+@media (max-width: 1000px) and (min-width: 800px) {
+    .home-form {
+        width: 90%;
+        height: 80vh;
+    }
+
+    .home-form-data {
+        height: 20vh;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .home-form-data input {
+        width: 100%;
+        height: 8vh;
+        font-size: 40px;
+    }
+
+    .home-form-data button {
+        width: 50%;
+        height: 7vh;
+        margin-top: 1vh;
+    }
+
+    .home-form-title {
+        width: 100%;
+        margin-left: 0%;
+        height: 15vh;
+        text-align: center;
+    }
+
+    .home-form-title p {
+        font-size: 45px;
+    }
+
+    .home-form-theme {
+        height: 10vh;
+    }
+
+    .home-form-theme img {
+        width: 15%;
+    }
+}

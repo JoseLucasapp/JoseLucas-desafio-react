@@ -1,0 +1,35 @@
+.top-bar-main {
+    display: flex;
+    flex-direction: row;
+    height: 7vh;
+    justify-content: center;
+    border: 1px solid var(--color-neutral-muted);
+}
+
+.top-bar-main .repository {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 2px solid var(--borderBottom);
+    width: 13%;
+    justify-content: center;
+}
+
+.top-bar-main .repository svg {
+    width: 10%;
+    height: 100%;
+}
+
+.top-bar-main .repository p {
+    margin-left: 2%;
+}
+
+.top-bar-main .repository .repositoriesNumber {
+    margin-left: 2%;
+    background-color: var(--color-neutral-muted);
+    color: var(--lightMode);
+    border-radius: 15px;
+    width: 15%;
+    height: 50%;
+    text-align: center;
+}

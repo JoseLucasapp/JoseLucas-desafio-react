@@ -6,6 +6,7 @@ import { useNavigate } from "react-router-dom";
 import axios from "axios";
 
 import '../styles/home.css'
+import swal from "sweetalert";
 
 export default function Home() {
 
@@ -27,14 +28,24 @@ export default function Home() {
 
     const checkUser = async (username: string) => {
         try {
-            const userData = await axios.get(`https://api.github.com/users/${username}`)
-            const data = userData.data
-            setUserData(data)
-            history('/user')
+            if (username.length > 0) {
+                const userData = await axios.get(`https://api.github.com/users/${username}`)
+                const data = userData.data
+                setUserData(data)
+                history('/user')
+            } else {
+                swal({
+                    title: "Oops!",
+                    text: "Informe um nome de usuário válido do github.",
+                    icon: "warning",
+                });
+            }
+
         } catch (err: any) {
             if (err.response) {
-                console.log(err.response.status)
-                console.log(err.response.data.message)
+                if (err.response.status) {
+                    history('notFound')
+                }
             }
         }
     }

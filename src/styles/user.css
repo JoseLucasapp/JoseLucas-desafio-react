@@ -1,0 +1,126 @@
+.user-main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-and-repos-details {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+}
+
+.user-canvas {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    align-items: center;
+}
+
+.profile-pic {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-canvas img {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+}
+
+.repos-canvas {
+    width: 70%;
+}
+
+.user-login .name {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.user-login .username {
+    font-size: 20px;
+    margin-top: -4vh;
+}
+
+.user-text-details {
+    width: 260px;
+}
+
+.user-personal-details .blog {
+    display: flex;
+    flex-direction: row;
+}
+
+.user-personal-details .blog a {
+    width: 230px;
+    text-decoration: none;
+    color: var(--darkMode);
+}
+
+.user-personal-details .blog a:hover {
+    width: 230px;
+    text-decoration: underline;
+    color: var(--links);
+}
+
+.user-personal-details .blog p {
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.user-personal-details div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1%;
+    height: 5vh;
+    width: 100%;
+}
+
+.user-personal-details div svg {
+    width: 10%;
+    height: 100%;
+}
+
+
+.follow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.follow p {
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.follow svg {
+    width: 10%;
+    height: 100%;
+}
+
+.follow-button {
+    width: 100%;
+}
+
+.follow-button button {
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--btn-bccolor);
+    color: var(--lightMode);
+    height: 5vh;
+    border: 0px transparent;
+    cursor: pointer;
+}
+
+.follow-button button:focus {
+    outline: 0;
+}

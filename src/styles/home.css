@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: center;
     font-family: 'Manrope', sans-serif;
-    background-color: white;
+    background-color: var(--whiteMode);
 }
 
 .home-form {
@@ -26,7 +26,7 @@
     width: 50%;
     height: 6vh;
     border-radius: 5px;
-    border: 1px solid #171515;
+    border: 1px solid var(--darkMode);
     font-size: 20px;
 }
 
@@ -38,8 +38,8 @@
     width: 20%;
     margin-left: 0.5%;
     height: 6.5vh;
-    background-color: #171515;
-    color: white;
+    background-color: var(--darkMode);
+    color: var(--whiteMode);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -47,7 +47,7 @@
     font-size: 3vh;
     border-radius: 5px;
     cursor: pointer;
-    border: 0px solid #171515;
+    border: 0px solid var(--darkMode);
 }
 
 .home-form-data {
@@ -66,7 +66,7 @@
     flex-direction: row;
     justify-content: center;
     margin-left: 10%;
-    color: #171515;
+    color: var(--darkMode);
 }
 
 .home-form button {

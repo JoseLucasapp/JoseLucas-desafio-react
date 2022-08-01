@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+:root {
+  --btn-bccolor: #21262d;
+  --lightMode: #c9d1d9;
+  --darkMode: #171515;
+  --links: blue;
+  --borderBottom: #f78166;
+  --color-neutral-muted: rgba(110, 118, 129, 0.4);
+  --color-btn-white: #f6f8fa;
+  --color-accent-fg: #58a6ff;
+  --color-accent-subtle: rgba(56, 139, 253, 0.15);
+  --repoDesc: #8b949e;
+}

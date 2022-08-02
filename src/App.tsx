@@ -1,17 +1,17 @@
 import React from 'react';
 import './App.css';
-import { AppProvider } from './context/context';
+import { ThemeProvider } from './context/ThemeContext';
 import { BrowserRouter } from 'react-router-dom';
 
 import AppRoutes from './routes';
 
 function App() {
   return (
-    <AppProvider>
+    <ThemeProvider>
       <BrowserRouter>
         <AppRoutes />
       </BrowserRouter>
-    </AppProvider>
+    </ThemeProvider>
   );
 }
 

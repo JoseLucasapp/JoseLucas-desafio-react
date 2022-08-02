@@ -1,13 +1,12 @@
-import React, { useContext } from "react";
-import { Context } from "../context/context";
+import { useContext } from "react";
+import { ThemeContext } from "../context/ThemeContext";
+import { changeColor, changeColorInverted } from "../helpers/utils";
 import "../styles/notFound.css"
 
 export default function NotFound({ isRoute }: any) {
-    const { theme } = useContext(Context)
+    const { theme } = useContext(ThemeContext)
 
-    const changeColor = theme === 'dark' ? '#171515' : 'white'
-    const changeColorInverted = theme === 'dark' ? 'white' : '#171515'
-    const notFoundStyle = { backgroundColor: changeColor, color: changeColorInverted }
+    const notFoundStyle = { backgroundColor: changeColor(theme), color: changeColorInverted(theme) }
     const sadImg = theme === 'dark' ? require('../public/sad2.png') : require('../public/sad.png')
 
     return (
@@ -16,7 +15,7 @@ export default function NotFound({ isRoute }: any) {
                 <div className="not-found-canvas">
                     <img src={sadImg} alt="" />
                     <p className="not-found-title">404</p>
-                    <p className="not-found-subtitle">{isRoute ? 'ERRROUU' : 'Usuário não encontrado no github. Verifique se você digitou o nome corretamente.'}</p>
+                    <p className="not-found-subtitle">{isRoute ? 'Página não existe' : 'Usuário não encontrado no github. Verifique se você digitou o nome corretamente.'}</p>
                 </div>
             </div>
         </section>

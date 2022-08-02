@@ -1,10 +1,15 @@
 .repository-main {
-    border-bottom: 1px solid var(--color-neutral-muted);
+    border-bottom: 1px solid var(--color-neutral-muted-dark);
 }
 
 .repository-main .title {
     color: var(--color-accent-fg);
     font-size: 20px;
+}
+
+.repository-main .title a {
+    text-decoration: none;
+    color: var(--color-accent-fg);
 }
 
 .repository-main .description {
@@ -40,12 +45,52 @@
     border-radius: 50%;
 }
 
-.repository-main .details .language {
+.repository-main .details {
     display: flex;
     align-items: center;
 }
 
-.repository-main .details .language p {
+
+.repository-main .details div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 15%;
+}
+
+.repository-main .details p {
     margin-left: 0.5%;
     font-size: 12px;
+}
+
+.repository-main .details .language p {
+    margin-left: 3%;
+    font-size: 12px;
+}
+
+.repository-main .details div svg {
+    width: 10%;
+    height: 100%;
+}
+
+
+@media (max-width: 1000px) and (min-width: 100px) {
+    .repository-main {
+        width: 90%;
+    }
+
+    .repository-main .details {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .repository-main .details div {
+        width: 25%;
+        margin-left: 1%;
+    }
+
+    .repository-main .details .updated-at {
+        min-width: 130px;
+        max-width: 150px;
+    }
 }

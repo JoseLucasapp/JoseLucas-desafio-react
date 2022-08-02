@@ -9,7 +9,7 @@ function AppRoutes() {
     return (
         <Routes>
             <Route path="/notFound" element={<NotFound />} />
-            <Route path="/user" element={<User />} />
+            <Route path="/user/:username" element={<User />} />
             <Route path="/" element={<Home />} />
             <Route path="*" element={<NotFound isRoute />} />
         </Routes>

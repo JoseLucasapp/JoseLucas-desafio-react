@@ -1,14 +1,16 @@
-import React, { useContext, useEffect } from "react";
-import { Context } from "../context/context";
+import { useContext, useEffect, useState } from "react";
+import { ThemeContext } from "../context/ThemeContext";
 
 import { useNavigate } from "react-router-dom";
 
-import axios from "axios";
-
 import '../styles/home.css'
 import swal from "sweetalert";
+import { ThemeEnum } from "../interfaces/theme-inteface";
+import { changeColor, changeColorInverted } from "../helpers/utils";
 
 export default function Home() {
+    const [search, setSearch] = useState('')
+    const { setTheme, theme } = useContext(ThemeContext)
 
     const history = useNavigate()
 
@@ -16,47 +18,27 @@ export default function Home() {
         setSearch('')
     }, [])
 
-    const { search, setSearch, theme, setTheme, setUserData } = useContext(Context)
-
     const setCurrentTheme = () => {
-        if (theme === 'light') {
-            setTheme('dark')
-        } else {
-            setTheme('light')
-        }
+        setTheme(theme === ThemeEnum.light ? ThemeEnum.dark : ThemeEnum.light);
     }
 
     const checkUser = async (username: string) => {
-        try {
-            if (username.length > 0) {
-                const userData = await axios.get(`https://api.github.com/users/${username}`)
-                const data = userData.data
-                setUserData(data)
-                history('/user')
-            } else {
-                swal({
-                    title: "Oops!",
-                    text: "Informe um nome de usuário válido do github.",
-                    icon: "warning",
-                });
-            }
-
-        } catch (err: any) {
-            if (err.response) {
-                if (err.response.status) {
-                    history('notFound')
-                }
-            }
+        if (username.length > 0) {
+            history(`/user/${search}`)
+        } else {
+            swal({
+                title: "Oops!",
+                text: "Informe um nome de usuário válido do github.",
+                icon: "warning",
+            });
         }
     }
 
-    const changeColor = theme === 'dark' ? '#171515' : 'white'
-    const changeColorInverted = theme === 'dark' ? 'white' : '#171515'
     const themeImg = theme === 'dark' ? require('../public/theme2.png') : require('../public/theme.png')
     const searchImg = theme === 'dark' ? require('../public/search2.png') : require('../public/search.png')
-    const homeMainStyle = { backgroundColor: changeColor }
-    const homeFormStyle = { color: changeColorInverted }
-    const homeFormButtonStyle = { backgroundColor: changeColorInverted, color: changeColor }
+    const homeMainStyle = { backgroundColor: changeColor(theme) }
+    const homeFormStyle = { color: changeColorInverted(theme) }
+    const homeFormButtonStyle = { backgroundColor: changeColorInverted(theme), color: changeColor(theme) }
 
 
     return (
@@ -64,7 +46,7 @@ export default function Home() {
             <div className="home-form">
                 <div className="home-form-title" style={homeFormStyle}><p>Buscar repositório no github</p></div>
                 <div className="home-form-data">
-                    <input type="text" onChange={e => setSearch(e.target.value)} />
+                    <input type="text" placeholder="Digite o nome do usuário" onChange={e => setSearch(e.target.value)} />
                     <button style={homeFormButtonStyle} onClick={() => checkUser(search)}><img src={searchImg} alt="" /> Buscar</button>
                 </div>
                 <div className="home-form-theme">

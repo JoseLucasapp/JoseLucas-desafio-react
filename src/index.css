@@ -13,13 +13,21 @@ code {
 }
 
 :root {
-  --btn-bccolor: #21262d;
-  --lightMode: #c9d1d9;
+  --color-btn-bg: #f6f8fa;
+  --color-btn-border: rgba(27, 31, 36, 0.15);
+  --color-btn-text: #24292f;
+  --color-btn-border-light: rgba(27, 31, 36, 0.15);
+  --color-btn-text-light: #24292f;
+  --lightMode: #FFFFFF;
   --darkMode: #171515;
   --links: blue;
   --borderBottom: #f78166;
-  --color-neutral-muted: rgba(110, 118, 129, 0.4);
-  --color-btn-white: #f6f8fa;
+  --color-neutral-muted: rgba(175, 184, 193, 0.2);
+  --color-neutral-muted-dark: rgba(110, 118, 129, 0.4);
+  --color-btn-border-dark: rgba(240, 246, 252, 0.1);
+  --color-fg-default: #c9d1d9;
+  --color-btn-hover-bg: #30363d;
+  --color-btn-hover-border: #8b949e;
   --color-accent-fg: #58a6ff;
   --color-accent-subtle: rgba(56, 139, 253, 0.15);
   --repoDesc: #8b949e;

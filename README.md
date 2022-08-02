@@ -23,7 +23,7 @@ Currently it is working on vercel.
 ![](./public/image2.jpeg)
 
 ### Themes
-The app has two themes (light and dark)
+The app has two themes (light and dark).
 
 ### Tools
 <ul>

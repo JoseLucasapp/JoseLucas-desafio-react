@@ -21,3 +21,14 @@ Currently it is working on vercel.
 
 ### Repositories page
 ![](./public/image2.jpeg)
+
+### Themes
+The app has two themes (light and dark)
+
+### Tools
+<ul>
+  <li>React</li>
+  <li>Typescript</li>
+  <li>Axios</li>
+  <li>Sweet Alert</li>
+</ul>

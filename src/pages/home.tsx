@@ -1,12 +1,10 @@
 import { useContext, useEffect, useState } from "react";
-import { ThemeContext } from "../context/ThemeContext";
-
 import { useNavigate } from "react-router-dom";
-
-import '../styles/home.css'
 import swal from "sweetalert";
+import { ThemeContext } from "../context/ThemeContext";
 import { ThemeEnum } from "../interfaces/theme-inteface";
 import { changeColor, changeColorInverted } from "../helpers/utils";
+import '../styles/home.css'
 
 export default function Home() {
     const [search, setSearch] = useState('')

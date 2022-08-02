@@ -5,7 +5,7 @@ export interface GithubLicenseInterface {
     spdx_id: string;
 }
 
-export interface RepositoryItens {
+export interface RepositoryInterface {
     language: string;
     name: string;
     description: string;

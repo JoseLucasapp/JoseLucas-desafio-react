@@ -28,3 +28,7 @@
 .not-found-subtitle {
     font-size: 20px;
 }
+
+.not-found-main .try-again {
+    text-decoration: none;
+}

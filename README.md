@@ -11,6 +11,8 @@
 ## Demo
 Here is a working live demo :  https://jose-lucas-desafio-react.vercel.app/
 
+## How to use?
+On the first page you can search for an user, and on the second page you will see all his latest 30 public repositories.
 
 ## Site
 

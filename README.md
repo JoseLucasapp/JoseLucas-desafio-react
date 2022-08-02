@@ -33,4 +33,5 @@ The app has two themes (light and dark).
   <li>Typescript</li>
   <li>Axios</li>
   <li>Sweet Alert</li>
+  <li>Github API</li>
 </ul>
